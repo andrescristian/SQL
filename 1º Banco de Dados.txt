@@ -1,0 +1,34 @@
+Banco de Dados (Linguagem SQL - Linguagem de Consulta Estruturada)
+
+SQL -> é uma linguagem de programação para CRIAR, RECUPERAR, ATUALIZAR e EXCLUIR DADOS em um banco de dados relacional.
+
+-> Um Banco de Dados guarda informações de forma mais complexa que planilhas de Excel, sendo controlado por um SGBD, seja um Banco de Dados Relacional ou Não-relacional - NoSQL
+- Banco de Dados Relacional tem uma tabela parecida com as do Excel, com Linhas e Colunas
+- Banco de Dados Não-relacional tem qualquer formato de tabela
+
+-> Alguns dos Bancos de Dados Relacionais e SGBD conhecidos são o PostgreSQL, SQL Server e MySQL Workbench
+
+#Principais Comandos SQL:
+
+1º CREATE DATABASE	--> Cria um Banco de Dados
+Ex: CREATE DATABASE tabelaDB;
+    - A maneira correta de criar uma Base de Dados seria da seguinte forma:
+        CREATE DATABASE TabelaDB
+        DEFAULT CHARACTER SET utf8
+        DEFAULT COLLATE utf8_general_ci;
+
+    - As Cláusulas adicionais são usadas pra que a base de dados se adapte a diferentes idiomas, pra especificar o conjunto de caracteres do banco de dados
+
+2º USE	--> Escolhe um banco de dados
+Ex: USE tabelaDB;
+
+3º DROP DATABASE	--> Remove um Banco de Dados Permanentemente
+Ex: DROP DATABASE tabelaDB;
+
+4º ALTER DATABASE *Nome* READ ONLY = 1	--> Define o Banco de Dados para Somente Leitura. Não dá pra mudar nada nele, mas é possível acessar os dados dele
+Ex: ALTER DATABASE tabelaDB READ ONLY = 1;
+- Se eu tentar remover esse banco de dados com DROP DATABASE, não vai dar certo porque ele está no modo leitura
+
+5º ALTER DATABASE *Nome* READ ONLY = 0	--> Desabilita o modo leitura
+Ex: ALTER DATABASE tabelaDB READ ONLY = 0;
+- Agora é possível remover o Banco de dados
