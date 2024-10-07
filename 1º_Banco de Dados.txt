@@ -2,7 +2,8 @@ Banco de Dados (Linguagem SQL - Linguagem de Consulta Estruturada)
 
 SQL -> é uma linguagem de programação para CRIAR, RECUPERAR, ATUALIZAR e EXCLUIR DADOS em um banco de dados relacional.
 
--> Um Banco de Dados guarda informações de forma mais complexa que planilhas de Excel, sendo controlado por um SGBD, seja um Banco de Dados Relacional ou Não-relacional - NoSQL
+-> Um Banco de Dados guarda informações de forma mais complexa que planilhas de Excel, sendo controlado por um SGBD, seja um Banco de Dados Relacional
+ou Não-relacional - NoSQL
 - Banco de Dados Relacional tem uma tabela parecida com as do Excel, com Linhas e Colunas
 - Banco de Dados Não-relacional tem qualquer formato de tabela
 
