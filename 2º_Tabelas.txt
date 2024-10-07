@@ -27,7 +27,8 @@ DECIMAL(Valor máximo de nº, Valor Mínimo)	--> Usado para Nº Decimais
 DATE	--> Usado para Data
 TEXT	--> Usado para guardar grandes textos, geralmente descrição de um Campo
 
-7º SELECT * FROM	--> Escolhe a Tabela e mostra todos os dados/registros da tabela
+7º SELECT * FROM	--> Escolhe a Tabela e mostra todos os registros da tabela. É possível fazer consulta de diferentes resultados
+usando a vírgula, ou uso de funções agregadas como o COUNT(column_name) e SUM(column_name), que veremos mais pra frente
 Ex: SELECT * FROM funcionarios;
 
 
