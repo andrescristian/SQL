@@ -1,0 +1,41 @@
+!Criando Tabelas
+- Uma Tabela de um Banco de Dados Relacional é feito por Linhas e Colunas, parecido com o Excel
+
+6º CREATE TABLE --> Cria uma Tabela
+Ex: CREATE TABLE IF NOT EXISTS alunos (
+
+) DEFAULT CHARSET = utf8;
+- Dentro dos Parenteses se faz a listagem de Colunas
+- Cada Coluna é separada por uma vírgula
+- A Cláusula IF NOT EXISTS é uma boa prática de criação de tabelas para evitar que 2 tabelas já existam com o mesmo nome
+- A Cláusula DEFAULT CHARSET = utf8 é padroniza valores de caracteres
+
+Ex: CREATE TABLE IF NOT EXISTS funcionarios(
+	empregado_id INT,	
+	primeiro_nome VARCHAR(50),
+	segundo_nome VARCHAR(50),
+	pagamento_hora DECIMAL(5, 2),
+	hora_data DATE
+) DEFAULT CHARSET = utf8;
+
+
+
+- Os Tipos de Dados no SQL são:
+INT	--> Usado para nº Inteiros
+VARCHAR(Nº Máximo de Caracteres)	--> Usado para Caracteres, Letras
+DECIMAL(Valor máximo de nº, Valor Mínimo)	--> Usado para Nº Decimais
+DATE	--> Usado para Data
+TEXT	--> Usado para guardar grandes textos, geralmente descrição de um Campo
+
+7º SELECT * FROM	--> Escolhe a Tabela e mostra todos os dados/registros da tabela
+Ex: SELECT * FROM funcionarios;
+
+
+
+8º RENAME TABLE *Nome* TO *Outro Nome*	--> Renomeia uma Tabela
+Ex: RENAME TABLE funcionarios TO trabalhadores;
+
+
+
+9º DROP TABLE 	--> Exclui uma Tabela
+Ex: DROP TABLE trabalhadores;
