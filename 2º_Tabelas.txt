@@ -19,10 +19,9 @@ Ex: CREATE TABLE IF NOT EXISTS funcionarios(
 ) DEFAULT CHARSET = utf8;
 
 
-
 - Os Tipos de Dados no SQL são:
 INT	--> Usado para nº Inteiros
-VARCHAR(Nº Máximo de Caracteres)	--> Usado para Caracteres, Letras
+VARCHAR(Nº Máximo de Caracteres)		--> Usado para Caracteres, Letras
 DECIMAL(Valor máximo de nº, Valor Mínimo)	--> Usado para Nº Decimais
 DATE	--> Usado para Data
 TEXT	--> Usado para guardar grandes textos, geralmente descrição de um Campo
@@ -32,10 +31,8 @@ usando a vírgula, ou uso de funções agregadas como o COUNT(column_name) e SUM
 Ex: SELECT * FROM funcionarios;
 
 
-
 8º RENAME TABLE *Nome* TO *Outro Nome*	--> Renomeia uma Tabela
 Ex: RENAME TABLE funcionarios TO trabalhadores;
-
 
 
 9º DROP TABLE 	--> Exclui uma Tabela
