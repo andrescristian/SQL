@@ -1,0 +1,57 @@
+!Criando Colunas
+
+10º ALTER TABLE	--> Altera Valores na Tabela
+Ex: ALTER TABLE trabalhadores
+    ADD numero_tel VARCHAR(20);	--> Adiciona uma nova Coluna numa Tabela
+
+11º ALTER TABLE
+    RENAME COLUMN *Name* TO *OtherName*	-->	Renomeia uma Coluna 	
+ Ex: ALTER TABLE trabalhadores
+     RENAME COLUMN coluna TO column;
+
+12º ALTER TABLE
+    DROP COLUMN *Name*	--> Remove uma Coluna
+Ex: ALTER TABLE trabalhadores
+    DROP COLUMN coluna;
+
+13º ALTER TABLE
+    MODIFY COLUMN *Name* *Tipo de Dado*	--> Muda o Tipo de Dado de uma Coluna
+Ex: ALTER TABLE trabalhadores
+    MODIFY COLUMN coluna VARCHAR(nº);
+
+14º ALTER TABLE 
+    MODIFY coluna VARCHAR(nº) AFTER *OtherColumn*	--> Posiciona uma Coluna na frente de outra Coluna
+Ex: ALTER TABLE trabalhadores
+    MODIFY coluna VARCHAR(nº) AFTER column;
+
+15º ALTER TABLE
+    MODIFY coluna VARCHAR(nº) FIRST	--> Posiciona uma Coluna para a 1º Posição de Colunas
+Ex: ALTER TABLE trabalhadores
+    MODIFY coluna VARCHAR(nº) FIRST;
+
+
+!Consultando Dados de uma Tabela
+16º SELECT * FROM
+    WHERE coluna =, <=, >=, !=	"Varchar" ou INT;
+Ex1: SELECT * FROM trabalhadores
+    WHERE nome = "Andres";	--> Vai mostrar a Linha ou As Linhas específicas de uma Tabela com esse Valor("Andres")
+
+Ex2: SELECT * FROM trabalhadores
+     WHERE nome IS NULL;	--> Vai mostrar a Linha ou As Linhas específicas de uma Tabela SEM VALORES NA COLUNA(nome)
+	
+Ex3: SELECT * FROM trabalhadores
+     WHERE nome NOT NULL	--> Vai mostrar a Linha ou As Linhas específicas de uma Tabela COM VALORES NA COLUNA(nome)
+
+!Atualizando e Removendo Linhas
+17º UPDATE trabalhadores	--> Atualiza uma Tabela
+    SET coluna = 19		--> Coloca o Valor que vai ser colocado
+    WHERE nome = "Andres";	--> Localiza a Linha que vai Atualizar onde tiver o Nome "Andres"
+
+18º DELETE FROM tabela		--> Escolhe a Tabela onde vou remover a Linha
+    WHERE Nome = "Andres";	--> Localiza a Linha que vai Remover onde tiver o Nome "Andres"
+
+
+*Observação:
+- A condição WHERE é usada antes do GROUP BY, sendo feita antes do agrupamento de uma consulta
+- A condição HAVING é usada após o agrupamento, depois da consulta usando o GROUP BY. A principal vantagem de usar a Cláusula HAVING é que
+esse comando pode ser usada com funções de agregação MAX(), MIN(), COUNT() ...
